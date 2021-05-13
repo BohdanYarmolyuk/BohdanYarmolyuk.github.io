@@ -84,5 +84,36 @@ function myFunction(id) {
   }
 }
 </script>
+  
+  <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт</button>
+<div id="Demo1" class="w3-container w3-hide">
+  <h4>Цікавий факт №1</h4>
+  <p>Температура типової блискавки може перевищувати 30,000 градусів за Цельсієм - це приблизно в 5 разів більше, ніж температура поверхні сонця.</p>
+</div>
+
+
+<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт</button>
+<div id="Demo2" class="w3-container w3-hide">
+  <h4>Цікавий факт №2</h4>
+  <p>Сніг відбиває в космос до 90% сонячного світла. Більше жодне природне тіло не володіє такою відбивною здатністю.</p>
+</div>
+
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт</button>
+<div id="Demo3" class="w3-container w3-hide">
+  <h4>Цікавий факт №3</h4>
+  <p>Фата Моргана або небесний міраж - рідкісне атмосферне явище, при якому на горизонті стають видні об'єкти, що знаходяться за горизонтом.</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 </body>
 </html>
