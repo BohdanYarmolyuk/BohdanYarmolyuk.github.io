@@ -20,11 +20,11 @@
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
   
 <div class="w3-container">
-  <h2>Example Text</h2>
+  <h2>Так було, є і буде</h2>
 
   <div class="w3-container w3-border w3-large">
-    <div class="w3-left-align"><p>Природа прекрасна</p></div>
-    <div class="w3-right-align"><p>Як не крути</p></div>
+    <div class="w3-left-align"><p>Як не крути</p></div>
+    <div class="w3-right-align"><p>Природа прекрасна</p></div>
   </div>
 </div>
 
@@ -45,6 +45,40 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+</script><button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+Open Section 1</button>
+
+<div id="Demo1" class="w3-container w3-hide">
+  <p>Some text..</p>
+</div>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+  
+  <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+Open Section 1</button>
+
+<div id="Demo1" class="w3-container w3-hide">
+  <p>Some text..</p>
+</div>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
 
