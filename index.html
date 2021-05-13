@@ -64,35 +64,29 @@ function myFunction(id) {
 }
 </script>
   
-  <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
-Цікавий факт №1</button>
-
+  <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт №1</button>
 <div id="Demo1" class="w3-container w3-hide">
+  <h4>Цікавий факт №1</h4>
   <p>Температура типової блискавки може перевищувати 30,000 градусів за Цельсієм - це приблизно в 5 разів більше, ніж температура поверхні сонця.</p>
 </div>
-  <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
-Цікавий факт №2</button>
-
-<div id="Demo2" class="w3-container w3-hide">
+  
+</div>
+  <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт №2</button>
+<div id="Demo1" class="w3-container w3-hide">
+  <h4>Цікавий факт №2</h4>
   <p>Сніг відбиває в космос до 90% сонячного світла. Більше жодне природне тіло не володіє такою відбивною здатністю.</p>
- Цікавий факт №3</button>
-
-<div id="Demo3" class="w3-container w3-hide">
-  <p>У ядрі нашої планети міститься в 5 разів більше золота, ніж у всіх інших породах, доступних для розробки, разом узятих. Якби все золото ядра Землі вилилося на поверхню, то покрило б всю Землю шаром завтовшки пів метра. Цікаво, що в кожному літрі води всіх річок, морів і океанів розчинено близько 0,02 міліграма золота.</p>
 </div>
 
 </div>
-
 <script>
 function myFunction(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else {
+  } else { 
     x.className = x.className.replace(" w3-show", "");
   }
 }
 </script>
-
 </body>
 </html>
