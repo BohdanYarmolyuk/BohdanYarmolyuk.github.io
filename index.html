@@ -8,24 +8,16 @@
 </style>
 <body>
 
-<h2 class="w3-center">Beautiful Nature</h2>
+<h2 class="w3-center">Manual Slideshow</h2>
 
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="https://icocnews.ru/wp-content/uploads/2015/09/priroda.jpg" style="width:100%">
-  <img class="mySlides" src="https://i.pinimg.com/originals/5a/df/1b/5adf1b97742a65d0a3c98299c545570b.jpg" style="width:100%">
-  <img class="mySlides" src="https://nashvancouver.com/wp-content/uploads/2019/10/%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%B0-%D0%B7%D0%B0%D0%BF%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BD%D0%B0%D0%B4%D1%8B.jpg" style="width:100%">
-  <img class="mySlides" src="https://kratkoe.com/wp-content/uploads/2018/05/znachenie-krugovorota-veschestv-v-prirode.jpg" style="width:100%">
+  <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
+  <img class="mySlides" src="img_lights.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+  <img class="mySlides" src="img_forest.jpg" style="width:100%">
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  
-<div class="w3-container">
-  <h2>Так було, є і буде:</h2>
-
-  <div class="w3-container w3-border w3-large">
-    <div class="w3-left-align"><p>Як не крути</p></div>
-    <div class="w3-right-align"><p>Природа прекрасна</p></div>
-  </div>
 </div>
 
 <script>
@@ -47,24 +39,46 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
-  
-  <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт</button>
-<div id="Demo1" class="w3-container w3-hide">
-  <h4>Цікавий факт №1</h4>
-  <p>Температура типової блискавки може перевищувати 30,000 градусів за Цельсієм - це приблизно в 5 разів більше, ніж температура поверхні сонця.</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Text Alignments</h2>
+
+  <div class="w3-container w3-border w3-large">
+    <div class="w3-left-align"><p>Лівий текст.</p></div>
+    <div class="w3-right-align"><p>Правий текст.</p></div>
+  </div>
 </div>
 
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
 
-<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт</button>
-<div id="Demo2" class="w3-container w3-hide">
-  <h4>Цікавий факт №2</h4>
-  <p>Сніг відбиває в космос до 90% сонячного світла. Більше жодне природне тіло не володіє такою відбивною здатністю.</p>
+<h2>Active Accordions</h2>
+<p>In this example we add the w3-red class to an active accordion (when the button is clicked on and the content is opened).</p>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">Open Section 1</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>Some text..</p>
 </div>
 
-<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-left-align">Цікавий факт</button>
-<div id="Demo3" class="w3-container w3-hide">
-  <h4>Цікавий факт №3</h4>
-  <p>Фата Моргана або небесний міраж - рідкісне атмосферне явище, при якому на горизонті стають видні об'єкти, що знаходяться за горизонтом.</p>
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">Open Section 2</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Some other text..</p>
 </div>
 
 </div>
@@ -73,10 +87,115 @@ function myFunction(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
   } else { 
     x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
   }
 }
 </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Photo Card</h2>
+
+  <div class="w3-card-4" style="width:50%">
+    <img src="img_snowtops.jpg" alt="Alps" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>The Italian / Austrian Alps</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Bordered Image</h2>
+  <p>The w3-border class adds borders around the image.</p>
+  <p>Padding added wil be inside the borders:</p>
+  <img src="img_snowtops.jpg" class="w3-border" alt="Norway" style="padding:4px;width:50%">
+
+  <p>More padding:</p>
+  <img src="img_snowtops.jpg" class="w3-border" alt="Norway" style="padding:16px;width:50%">
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Bordered Image</h2>
+  <p>The w3-border class adds borders around the image.</p>
+  <p>Padding added wil be inside the borders:</p>
+  <img src="img_snowtops.jpg" class="w3-border" alt="Norway" style="padding:4px;width:50%">
+
+  <p>More padding:</p>
+  <img src="img_snowtops.jpg" class="w3-border" alt="Norway" style="padding:16px;width:50%">
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<img src="img_car.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+<p>This sidebar is hidden by default, (style="display:none")</p>
+<p>You must click on the "hamburger" icon (top left) to open it.</p>
+<p>The sidebar will hide a part of the page content.</p>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
 </body>
 </html>
