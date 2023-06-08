@@ -8,6 +8,17 @@ html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
+.w3-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.w3-dropdown:hover .w3-dropdown-content {
+  display: block;
+}
+
 /* Footer Styles */
 footer {
   background-color: #black;
