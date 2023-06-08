@@ -1,29 +1,101 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* styles.css */
+
+/* Global Styles */
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
 }
 
-header {
-  background-color: #f2f2f2;
-  padding: 20px;
+/* Navbar Styles */
+.w3-top .w3-bar {
+  background-color: #f1f1f1;
+  color: #000;
 }
 
-body {
-  background-image: url("Зображення/Фон.jpg");
+.w3-bar-item {
+  padding: 8px 16px;
 }
 
-section {
-  padding: 20px;
+.w3-bar-item:hover {
+  background-color: #ddd;
 }
 
-.course {
-  margin-bottom: 20px;
+.w3-bar-item:hover:not(.w3-button) {
+  color: #000;
 }
 
-footer {
-  background-color: #333;
+.w3-bar-item.w3-button {
+  text-decoration: none;
+}
+
+/* Sidebar Styles */
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+.w3-sidebar a {
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.w3-sidebar a:hover {
+  background-color: #ddd;
+}
+
+/* Main Content Styles */
+.w3-main {
+  margin-left: 250px;
+}
+
+.w3-padding-64 {
+  padding: 64px;
+}
+
+.w3-padding-32 {
+  padding: 32px;
+}
+
+.w3-padding-large {
+  padding: 48px;
+}
+
+.w3-text-teal {
+  color: #008080;
+}
+
+/* Pagination Styles */
+.w3-center .w3-bar {
+  margin-top: 16px;
+}
+
+.w3-button {
+  background-color: #000;
   color: #fff;
-  padding: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.w3-button:hover {
+  background-color: #444;
+}
+
+.w3-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f1f1f1;
+  padding: 16px;
   text-align: center;
+}
+
+/* Overlay Styles */
+.w3-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
