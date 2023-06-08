@@ -29,7 +29,7 @@ footer {
 }
 footer {
   flex-shrink: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* RGBA кольор з прозорістю 0.7 */
+  background-color: rgba(0, 0, 0, 0.3); /* RGBA кольор з прозорістю 0.7 */
 }
 /* Overlay Styles */
 .w3-overlay {
