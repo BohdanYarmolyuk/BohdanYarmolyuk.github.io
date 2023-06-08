@@ -7,10 +7,10 @@ html, body, h1, h2, h3, h4, h5, h6 {
 
 /* Footer Styles */
 footer {
-  background-color: #ffffff;
+  background-color: #black;
   padding: 16px;
   text-align: center;
-  text-color: #000000;
+  text-color: #white;
 }
 
 /* Overlay Styles */
