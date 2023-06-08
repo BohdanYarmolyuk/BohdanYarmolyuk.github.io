@@ -34,22 +34,6 @@ body {
 }
 
 /* Sidebar Styles */
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-
-.w3-sidebar a {
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.w3-sidebar a:hover {
-  background-color: #ddd;
-}
 
 /* Main Content Styles */
 .w3-main {
@@ -73,25 +57,6 @@ body {
 }
 
 /* Pagination Styles */
-.w3-center .w3-bar {
-  margin-top: 16px;
-}
-
-.w3-button {
-  background-color: #000;
-  color: #fff;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.w3-button:hover {
-  background-color: #444;
-}
-
-.w3-black {
-  background-color: #000;
-  color: #fff;
-}
 
 /* Footer Styles */
 footer {
