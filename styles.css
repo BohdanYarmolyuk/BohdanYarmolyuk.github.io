@@ -20,13 +20,28 @@ html, body, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Footer Styles */
-footer {
-  background-color: #black;
-  padding: 16px;
-  text-align: center;
-  text-color: #white;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.content {
+  grid-row: 1 / -1;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
 /* Overlay Styles */
 .w3-overlay {
   background-color: rgba(0, 0, 0, 0.5);
