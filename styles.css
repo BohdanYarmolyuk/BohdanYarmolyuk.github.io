@@ -69,18 +69,16 @@ html, body, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Footer Styles */
-<style>
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-  }
-</style>
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
 /* Overlay Styles */
 .w3-overlay {
   background-color: rgba(0, 0, 0, 0.5);
