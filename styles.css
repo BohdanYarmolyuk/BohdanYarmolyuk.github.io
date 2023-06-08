@@ -9,13 +9,13 @@ header {
   padding: 20px;
 }
 
-nav ul {
+a href {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+a class {
   display: inline;
   margin-right: 10px;
 }
