@@ -70,7 +70,7 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 60%;
   background-color: #f1f1f1;
   color: #333;
   text-align: center;
@@ -78,7 +78,7 @@ footer {
 }
 footer {
   flex-shrink: 0;
-  opacity: 0; /* Задайте значення прозорості від 0 до 1, де 0 - повністю прозорий, 1 - непрозорий */
+  opacity: 1; /* Задайте значення прозорості від 0 до 1, де 0 - повністю прозорий, 1 - непрозорий */
 }
 /* Overlay Styles */
 .w3-overlay {
