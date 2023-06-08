@@ -6,7 +6,7 @@ html, body, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-image: url("Фон.jpg");
+  background-image: url("Зображення/Фон.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
