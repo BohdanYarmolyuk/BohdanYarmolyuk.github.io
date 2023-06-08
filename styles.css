@@ -1,53 +1,4 @@
 /* styles.css */
-/*////////*/
-.w3-sidebar {
-  z-index: 3;
-  width: 50px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-  position: fixed;
-  overflow-y: auto;
-  transition: width 0.5s;
-}
-
-.w3-main {
-  transition: margin-left 0.5s;
-}
-
-.w3-sidebar.w3-collapse {
-  width: 0;
-}
-
-.w3-main.w3-shift-right {
-  margin-left: 0;
-  transition: margin-left 0.5s;
-}
-
-.w3-overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  cursor: pointer;
-  transition: opacity 0.5s;
-}
-
-.w3-sidebar.w3-opennav {
-  width: 250px;
-  transition: width 0.5s;
-}
-
-.w3-main.w3-shift-right {
-  margin-left: 250px;
-  transition: margin-left 0.5s;
-}
 
 /* Global Styles */
 html, body, h1, h2, h3, h4, h5, h6 {
@@ -78,7 +29,7 @@ footer {
 }
 footer {
   flex-shrink: 0;
-  opacity: 1; /* Задайте значення прозорості від 0 до 1, де 0 - повністю прозорий, 1 - непрозорий */
+  background-color: rgba(0, 0, 0, 0.7); /* RGBA кольор з прозорістю 0.7 */
 }
 /* Overlay Styles */
 .w3-overlay {
