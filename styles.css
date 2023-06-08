@@ -17,6 +17,7 @@ html, body, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Footer Styles */
+
 footer {
   flex-shrink: 0;
   background-color: rgba(0, 0, 0, 0); /* RGBA кольор з прозорістю 0.7 */
