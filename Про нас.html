@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <style>
-  body {
-    background-image: url("Зображення/Фон.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-</style>
+  <title>Про нас</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url("Зображення/Фон.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
+
 <body>
-<div class="w3-display-container>
-    <div class="w3-content" style="max-width:600px">
-        <div class="w3-display-bottommiddle">
-      <h4 class="w3-center"><b>Зв'язок із нами</b></h4>
-      <p></p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Ваше ім'я</label>
-          <input class="w3-input w3-border" type="text" name="Ім'я" required>
-        </div>
-        <div class="w3-section">
-          <label>Пошта</label>
-          <input class="w3-input w3-border" type="text" name="Пошта" required>
-        </div>
-        <div class="w3-section">
-          <label>Коротке повідомлення</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
-        </div>
-        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Відправити повідомлення</button>
-      </form>
-    </div>  
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">На головну</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Про нас.html">Зв'язок із нами</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Рекомендована Література.html">Рекомендована література</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Студентам
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ЛЕКЦІЇ.html">Лекції</a>
+            <a class="dropdown-item" href="ЛАБОРАТОРНІ.html">Лабораторні роботи</a>
+            <a class="dropdown-item" href="ТЕСТИ.html">Тести</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Новини.html">Новини</a>
+        </li>
+        <input type="text" class="w3-bar-item w3-input w3-right" placeholder="Пошук..">
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h1 class="text-info">Про нас</h1>
+        <p class="lead">Ми команда фахівців, що працює над розробкою цього навчального сайту. Наша мета - забезпечити якісну
+          освіту та матеріали для студентів, які вивчають різні дисципліни, пов'язані з комп'ютерними науками.</p>
+        <p>Якщо у вас є питання або пропозиції, будь ласка, заповніть форму нижче, і ми з вами зв'яжемося найближчим
+          часом.</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="form-group">
+            <label for="name">Ваше ім'я</label>
+            <input class="form-control" type="text" name="Ім'я" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Пошта</label>
+            <input class="form-control" type="email" name="Пошта" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Коротке повідомлення</label>
+            <textarea class="form-control" name="Повідомлення" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Відправити повідомлення</button>
+        </form>
+      </div>
+    </div>
   </div>
-  </body>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2023 Сайт навчання. Усі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
